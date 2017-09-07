@@ -1,4 +1,7 @@
-const express = require('express')
+
+const express = require('express');
+const fs = require('fs');
+const os = require('os');
 const app = express();
 
 
@@ -11,7 +14,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ala', function (req, res) {
-    res.send('ALA dziala!')
+
+    // res.redirect('back');
+
+    res.send({
+        "name":"slawek",
+        "age":1970
+    })
+
 });
 
 app.listen(port, function () {
