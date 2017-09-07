@@ -1,5 +1,7 @@
+
+
 function podajDane() {
-    axios.get('/ala')
+    axios.get('ala')
         .then(function (response) {
             console.log(response);
         })
